@@ -1,7 +1,67 @@
 [project]
-name = "ProjectTemplate"
+name = "project_name"
 version = "0.0.1"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.12.10"
+authors = [{ name = "ShawnChen", email = "cs@cstos.com" }]
+# 常用库
+dependencies = [
+    "apscheduler>=3.11.2",
+    "fabric>=3.2.2",
+    "flet[all]>=0.85.3",
+    "flet-audio>=0.85.3",
+    "flet-video>=0.85.3",
+    "flet-code-editor>=0.85.3",
+    "flet-webview>=0.85.3",
+    "gitpython>=3.1.46",
+    "keyboard>=0.13.5",
+    # 图像处理
+    "opencv-python>=4.13.0.92",
+    "pillow>=12.2.0",
+    "shapely>=2.1.1",
+    "ultralytics>=8.4.75",
+    "pyecharts>=2.1.0",
+    "psutil>=7.2.2",
+    "GitPython>=3.1.50",
+    "fabric>=3.2.3",
+    "pyperclip>=1.9.0",
+    "sqlmodel>=0.0.38",
+    "fastapi>=0.138.1",
+    "torch>=2.12.0",
+    "ultralytics>=8.3.199",
+    "mistune>=3.1.4",
+    "pystray>=0.19.5",
+    "redis>=7.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli>=0.85.3",
+    "flet-desktop>=0.85.3",
+    "flet-web>=0.85.3",
+    "mypy",
+    "pytest",
+]
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+# # https://beta.ruff.rs/docs/settings/
+[tool.ruff]
+line-length = 88
+# # https://beta.ruff.rs/docs/rules/
+# select = ["E", "W", "F"]
+# ignore = ["F401"]
+# # Exclude a variety of commonly ignored directories.
+# respect-gitignore = true
+# ignore-init-module-imports = true
+
+[tool.flet]
+org = "com.cstos"
+product = "ProjectTemplate"
+company = "Flet"
+copyright = "Copyright (C) 2026-2028 by ShawnChen"
+
+[tool.flet.app]
+path = "src"

@@ -12,17 +12,18 @@ def get_install_requires():
 
 
 setup(
-    name="xx",
-    version=VERSION,
-    author="Shawn Chen",  # user_name
-    author_email="cs@cstos.com",  # user_email
-    long_description_content_type="text/markdown",
+    name="xx",  # 包名称
+    version=VERSION,  # 包版本
+    author="Shawn Chen",  # 作者
+    author_email="cs@cstos.com",  # 作者邮箱, user_email
+    license="Apache",  # 协议缩写
     url="https://github.com/icstos/xx.git",
+    description="",  # 工具包简单描述
     long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
     python_requires=">=3.12",
-    install_requires=get_install_requires(),
+    install_requires=get_install_requires(),  # 工具包的依赖包
     packages=find_packages(),
-    license="Apache",
     classifiers=[
         "License :: OSI Approved :: Apache Software License",
         "Natural Language :: English",

@@ -80,6 +80,10 @@ Copyright 2018-2026 xxx, Inc and other contributors
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
 ```
 
+## License
+
+Modified Apache 2.0 — 基于 Apache License 2.0，附加商业使用限制条款。内部使用和非商业场景完全免费，商业托管/嵌入需获取商业授权。
+
 ## 致谢
 
 - 该项目参考了 XXX 的 XXX

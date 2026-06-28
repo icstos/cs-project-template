@@ -9,14 +9,17 @@ docs
 *.log
 *.db
 
+# pyenv
+.python-version
+.env
+
 # Virtual environments
 .venv
 .idea
 .vscode
 uv.lock
 
-# pyenv
-.python-version
+
 
 # Python-generated files
 # 编译的字节码
